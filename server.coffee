@@ -11,6 +11,6 @@ start = (route,handle) ->
         res.write "Hello,jacky.wu, welcome here!/n" + ret
         res.end
     
-    http.createServer(onReq).listen process.env.PORT or 8000
+    http.createServer(onReq).listen process.env.C9_PORT or 8000
 
 exports.start = start

@@ -8,7 +8,7 @@ start = (route,handle) ->
         ret = route handle,path
         
         res.writeHead 200,"Content-Type":'text/html'
-        res.write "Hello,jacky.wu, welcome here!/n" + ret
+        res.write "Hello,jacky.wu, welcome here!\n" + ret
         res.end
     
     http.createServer(onReq).listen process.env.PORT or 8000

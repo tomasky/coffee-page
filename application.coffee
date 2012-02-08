@@ -5,9 +5,9 @@ http = require "http"
 http.createServer (request, response) ->
 
   response.writeHead 200, 
-  'Content-Type':'Text/Plain'
+  'Content-Type':'Text/html'
    
-  response.end "hello,jacky\n"
+  response.end "<font color=blue>hello,jacky</font>\n"
 
   return
 

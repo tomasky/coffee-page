@@ -4,8 +4,10 @@ http = require "http"
 
 http.createServer (request, response) ->
 
-  response.writeHead 302, "Location":"https://github.com/flesch/coffeescript-on-heroku"
-  response.end "\n"
+  response.writeHead 200, 
+  'Content-Type':'Text/Plain'
+   
+  response.end "hello,jacky\n"
 
   return
 
